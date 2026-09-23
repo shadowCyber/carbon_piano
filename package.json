@@ -1,0 +1,18 @@
+{
+  "name": "carbon-piano",
+  "version": "0.1.0",
+  "description": "A kid-friendly piano teacher that runs entirely in the browser. Zero runtime dependencies, no accounts, no tracking.",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "check:security": "node scripts/check-security.mjs",
+    "check:syntax": "node scripts/check-syntax.mjs",
+    "ci": "npm run check:syntax && npm run check:security && npm test"
+  }
+}

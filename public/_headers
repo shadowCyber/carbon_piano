@@ -1,0 +1,15 @@
+# Security headers for Netlify / Cloudflare Pages.
+# Source of truth: scripts/security-headers.mjs (drift is checked in CI by scripts/check-security.mjs).
+/*
+  Content-Security-Policy: default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'none'; connect-src 'none'; media-src 'none'; object-src 'none'; worker-src 'none'; frame-src 'none'; manifest-src 'self'; base-uri 'none'; form-action 'none'; require-trusted-types-for 'script'; trusted-types 'none'; frame-ancestors 'none'
+  Permissions-Policy: midi=(self), camera=(), microphone=(), geolocation=(), usb=(), serial=(), hid=(), payment=(), display-capture=(), accelerometer=(), gyroscope=(), magnetometer=()
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+
+/index.html
+  Cache-Control: no-cache

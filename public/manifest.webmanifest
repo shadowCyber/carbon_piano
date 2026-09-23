@@ -1,0 +1,14 @@
+{
+  "name": "Carbon Piano",
+  "short_name": "Carbon Piano",
+  "description": "Learn to play piano with songs, note quizzes, and ear-training games.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#14161b",
+  "theme_color": "#14161b",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
